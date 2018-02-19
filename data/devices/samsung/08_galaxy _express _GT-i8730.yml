@@ -9,6 +9,9 @@
   block_devs:
     base_dirs:
       - /dev/block/platform/msm_sdcc.1/by-name
+      - /dev/block/mmcblk0
+      - /dev/block/platform/msm_sdcc.1/by-num
+      - /dev/block/mmcblk0
     system:
       - /dev/block/platform/msm_sdcc.1/by-name/system
       - /dev/block/mmcblk0p14 
@@ -24,9 +27,19 @@
     recovery:
       - /dev/block/platform/msm_sdcc.1/by-name/recovery
       - /dev/block/mmcblk0p18 
-    extra:
+    firmware:
       - /dev/block/platform/msm_sdcc.1/by-name/modem
-      - /dev/block/mmcblk0p1 
+      - /dev/block/mmcblk0p1
+    extra:
+      - aboot:
+      - /dev/block/platform/msm_sdcc.1/by-name/aboot
+      - /dev/block/mmcblk0p5
+      - external_sd:
+      - /dev/block/platform/msm_sdcc.3/by-name/android_meta
+      - /dev/block/mmcblk1p1
+      - /dev/block/platform/msm_sdcc.3/by-name/android_expand
+      - /dev/block/mmcblk1p2
+      - / dev/block/dm-0 
   boot_ui:
     supported: true
     flags:
