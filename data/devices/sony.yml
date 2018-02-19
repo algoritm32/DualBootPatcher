@@ -310,7 +310,7 @@
 
   block_devs:
     base_dirs:
-      - (/dev/block/platform/msm_sdcc.1/by-name)
+      - /dev/block/platform/msm_sdcc.1/by-name
     system:
       - /dev/block/platform/msm_sdcc.1/by-name/system
       - /dev/block/mmcblk0p26 
@@ -330,7 +330,6 @@
       - /dev/block/platform/msm_sdcc.1/by-name/modem 
       - /dev/block/mmcblk0p19  
     extra:
-     ta:
       - /dev/block/platform/msm_sdcc.1/by-name/TA 
       - /dev/block/mmcblk0p1
      external_sd:
@@ -347,7 +346,7 @@
     brightness_path: /sys/class/leds/lcd-backlight/brightness
     max_brightness: 4095
     default_brightness: 4095
-    pixel_format: RCB_565
+    pixel_format: RGB_565
     theme: portrait_hdpi 
  
 
