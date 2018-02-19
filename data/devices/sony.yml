@@ -299,7 +299,8 @@
     graphics_backends:
       - fbdev
     pixel_format: RGBX_8888
-    theme:
+    theme: portrait_hdpi
+    
 - name: Xperia M2 lte
   id: D2303
   codenames:
