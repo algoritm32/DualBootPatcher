@@ -348,6 +348,6 @@
     max_brightness: 4095
     default_brightness: 4095
     pixel_format: RCB_565
-    theme: portrait_hdpi portrait_hdpi
+    theme: portrait_hdpi 
  
 
